@@ -1,0 +1,125 @@
+@import '../scss/variables';
+
+
+
+/*----------------------------------------*/
+/*  05. Featurs Css
+/*----------------------------------------*/
+/*-- 
+    - 
+------------------------------------------*/
+.features__thumb {
+    overflow: hidden;
+  }
+  .features__thumb img {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+  }
+  .features__content {
+    padding: 25px 25px 20px 25px;
+    border: 1px solid #E7EAEF;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .features__content {
+      padding: 20px 20px;
+    }
+  }
+  .features__content-title {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .features__content-title {
+      font-size: 20px;
+    }
+  }
+  .features__content p {
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .features__content a {
+    font-weight: 500;
+  }
+  .features__content a i {
+    margin-left: 8px;
+    position: relative;
+    top: 1px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .features:hover .features__content {
+    background-color: #E48216;
+    border: 1px solid #E48216;
+  }
+  .features:hover .features__content-title {
+    color: #ffffff;
+  }
+  .features:hover .features__content p {
+    color: #ffffff;
+  }
+  .features:hover .features__content a {
+    color: #ffffff;
+  }
+  .features:hover .features__content a i {
+    color: #ffffff;
+  }
+  .features:hover .features__content a:hover i {
+    margin-left: 10px;
+  }
+  
+  .features:hover .features__thumb img {
+    transform: scale(1.1);
+  }
+  
+  .features2 {
+    padding: 30px 30px 20px 30px;
+    background: #fff;
+    border: 1px solid #E7EAEF;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .features2 .read-more i {
+    margin-left: 8px;
+  }
+  .features2:hover {
+    border: 1px solid #E48216;
+  }
+  .features2:hover .read-more {
+    color: #E48216;
+  }
+  .features2:hover .read-more i {
+    margin-left: 10px;
+  }
+  
+  .features2__title {
+    font-size: 20px;
+  }
+  
+  .features2__icon i {
+    font-size: 40px;
+    color: #E48216;
+  }
+  

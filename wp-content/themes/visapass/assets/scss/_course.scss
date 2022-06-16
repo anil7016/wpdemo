@@ -1,0 +1,87 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  25. Course  Css
+/*----------------------------------------*/
+.course__items{
+    padding: 30px 16px;
+    border: 1px solid $border-color;
+    &-icon{
+        & i{
+           color: $theme-color;
+           font-size: 32px;
+           margin-right: 14px;
+           vertical-align: middle;
+        }
+    }
+    &-dtext{
+        & span{
+           font-size: 14px;
+           font-weight: 400;
+           margin-bottom: 0px;
+        }
+        & h4{
+           font-size: 16px;
+        }
+    }
+}
+.course-detils__title{
+    font-size: 48px;
+}
+
+
+.course-module{
+    &__title{
+        font-size: 20px;
+        & i{
+            color: $theme-color;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.course-video{
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);        
+        top: 0;
+        left: 0;    
+        transform: scale(1);
+        }
+}
+
+
+.course-btn{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+    & i{
+        font-size: 50px;
+        color: $white;
+        vertical-align: middle;
+    }
+}
+
+.necessary-link li i {
+    margin-right: 18px;
+    color: $theme-color;
+    vertical-align: middle;
+    font-size: 20px;
+    @media #{$xs} {
+        margin-top: 5px;
+     }
+    
+  }
+  .necessary-link li {
+    color: $heading-color;
+    font-weight: 400;
+    margin-bottom: 10px;
+    @media #{$xs} {
+        display: flex;
+     }
+  }

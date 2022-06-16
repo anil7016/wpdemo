@@ -1,0 +1,53 @@
+/*----------------------------------------*/
+/*  20. Browse Css
+/*----------------------------------------*/
+
+.browse-box{
+    padding: 40px 40px 30px 30px;
+    background: $white;
+    @include transition(.3s);
+    @media #{$lg} {
+        padding: 30px 20px;
+     }
+    &:hover{
+        background: $theme-color;
+        & .browse__wrapper{
+            &__title{
+                color: $white;
+                
+            }
+            &__subtitle{
+                color: $white;
+            }
+            & .browse-link{
+                color: $white;
+            }
+        }
+    }
+}
+.browse__wrapper{
+    &__title{
+      font-size: 22px;
+      @include transition(.3s);
+      @media #{$lg} {
+        font-size: 20px;
+     }
+    }
+    &__subtitle{
+        @include transition(.3s);
+    }
+    & .browse-link{
+        @include transition(.3s);
+        & i{
+            margin-left: 8px;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+.z-btn {
+    background: #E48216;
+    color: #fff;
+    padding: 14px 29px;
+}

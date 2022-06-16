@@ -1,0 +1,96 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  08. Services Css
+/*----------------------------------------*/
+.services-vrly{
+    &:before{
+        background: rgba(0,0,0,0.8);  
+    }
+}
+.check-use a {
+    font-size: 16px;
+    color: $heading-color;
+    margin-right: 33px;
+    @media #{$xs} {
+        display: block;
+        margin-bottom: 10px;
+    }
+  }
+  .check-use a i {
+	margin-right: 15px;
+	color: $theme-color;
+	font-size: 20px;
+	position: relative;
+	top: 1px;
+}
+.service-intro-top{
+    margin-top: -230px;
+    z-index: 1;
+    position: relative;
+    background: $white;
+}
+// services featurs
+.services-items {
+	padding: 25px 35px;
+    @media #{$lg} {
+        padding: 20px 20px;
+    }
+    &__title{
+        font-size: 20px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    & p{
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        margin-right: 25px;
+    }
+    & a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 50%;
+        @include transition(.3s);
+        & i {
+            font-size: 20px;
+        }
+        &:hover{
+            background: $theme-color;
+            border: 1px solid $theme-color;
+            & i {
+                color: $white;
+            }
+        }
+    }
+    
+}
+
+.aborder1{
+    border: 1px solid $border-color2;
+    & i {
+        color: $border-color2;
+    }
+}
+.aborder2{
+    border: 1px solid $border-color3;
+    & i {
+        color: $border-color3;
+    }
+}
+.aborder3{
+    border: 1px solid $border-color4;
+    & i {
+        color: $border-color4;
+    }
+}
+.aborder4{
+    border: 1px solid $border-color5;
+    & i {
+        color: $border-color5;
+    }
+}

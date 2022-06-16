@@ -1,0 +1,139 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  22. Faq Css
+/*----------------------------------------*/
+.faq-tab .nav-pills .faq-tabs-btn {
+	background: $faq-bg;
+    height: 80px;
+	margin-right: 30px;
+	text-transform: uppercase;
+}
+.faq-content .accordion-item:first-of-type .accordion-button {
+	border-radius: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.accordion-button::after {
+	font-family: "Font Awesome 5 pro";
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	content: "\f067";
+	background: none !important;
+    color: $theme-color;
+}
+.accordion-button:not(.collapsed)::after {
+    content: "\f068";
+    font-family: "Font Awesome 5 Pro";
+    color: $theme-color;
+  }
+  .faq-content .accordion-button:not(.collapsed) {
+	background: $faq-bg;
+}
+.faq-white .accordion-button {
+	color: #222429;
+	background: #ffffff;
+	border: 1px solid $border-color;
+    font-size: 18px;
+    font-weight: 500;
+    color: $heading-color;
+}
+.faq-white .accordion-button:focus {
+	z-index: 3;
+	border-color: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+.faq-white .accordion-collapse {
+	border: none;
+}
+.faq-white .accordion-body {
+	background: #ffffff;
+    border: 1px solid $border-color;
+    padding-left: 25px;
+    padding: 1rem 1.25rem;
+    font-weight: 400;
+}
+.faq-content .accordion-body p {
+	margin: 0;
+	color: $body-text-color;
+}
+
+
+// Faq right faq form
+
+.faqfrm__visa {
+	padding: 30px;
+	background: $menuh-bg;
+  }
+
+  .sidebar-title {
+	  & h3{
+		  font-size: 22px;
+	  }
+  }
+  .faqfrm__visa-form input, .faqfrm__visa-form textarea {
+	width: 100%;
+	height: 60px;
+	padding: 0 20px;
+	border: 1px solid $white;
+	border-radius: 3px;
+	margin-bottom: 20px;
+  }
+  .faqfrm__visa-form input:focus, .bfaqfrm__visa-form textarea:focus {
+	border-color: $border-color;
+  }
+  .faqfrm__visa-form input::placeholder, .faqfrm__visa-form textarea::placeholder {
+	color: $body-text-color;
+	font-size: 16px;
+	font-weight: 400;
+  }
+  .faqfrm__visa-form {
+	  & textarea {
+		height: 120px;
+		resize: none;
+		padding: 15px 20px;
+	  }
+    & .nice-select {
+		border: 1px solid $white;
+		width: 100%;
+		margin-bottom: 20px;
+		height: 60px;
+		line-height: 60px;
+		padding: 0 20px;
+		background-color: $white;
+		& ul{
+			width: 100%;
+			& li{
+			   display: block;
+			}
+		}
+		&:focus{
+			border-color: $border-color;
+		}
+		&::after {
+			right: 20px;
+		  }
+	  }
+  }
+ 
+
+.faq-tab .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: $white;
+	background-color: $theme-color;
+    border: 1px solid $theme-color;
+}
+.faq-tab .nav-pills .nav-link {
+	background: $white;
+	border: 1px solid $border-color;
+	border-radius: 0px;
+	padding: 0px 35px;
+	height: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $heading-color;
+    @media #{$md} {
+        padding: 0px 15px;
+    }
+}

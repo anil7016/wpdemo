@@ -1,0 +1,213 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  13. Calltoaction Css
+/*----------------------------------------*/
+
+.calltoaction-area{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;    
+    transform: scale(1);
+    z-index: -1;
+    }
+}
+.calltoaction-img {
+        & img{
+           margin-top: -58px;
+           @media #{$xl} {
+            margin-top: 0px;
+            }
+            @media #{$lg} {
+                margin-top: 36px;
+            }
+            @media #{$md} {
+                display: none;
+            }
+            @media #{$xs} {
+                display: none;
+            }
+            @media #{$sm} {
+                display: none;
+            }
+        }
+    }
+.calltoaction-title{
+            font-size: 36px;
+            color: $white;
+            margin-left: 40px;
+            line-height: 1.27;
+            margin-bottom: 0px;
+            @media #{$lg} {
+                text-align: center;
+                font-size: 25px;
+                margin-left: 0px;
+            }
+            @media #{$md} {
+                text-align: left;
+                font-size: 30px;
+                margin-left: 0px;
+            }
+            @media #{$xs} {
+                text-align: center;
+                font-size: 30px;
+                margin-left: 0px;
+                padding: 50px 0px 30px 0px;
+            }
+            @media #{$sm} {
+                text-align: center;
+                font-size: 25px;
+                margin-left: 0px;
+            }
+    }
+.calltoaction-btn{
+        text-align: right;
+        @media #{$xs} {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        & .cl-btn{
+            background-color: transparent;
+            border: 1px solid $white;
+            text-align: right;
+            &:hover{
+                background: $theme-color;
+                border: 1px solid $theme-color;
+            }
+        }
+
+    }
+
+.callto-btn{
+    @media #{$sm,$xs} {
+        text-align: center;
+    }
+}
+// Call to action 2
+.justcont-cn{
+    @media #{$xs,$sm} {
+        justify-content: start !important;
+     }
+	
+}
+.callto-action-2 {
+	padding: 40px 0px;
+}
+.clto-btn-2{
+    text-align: right;
+    color: $white;
+    border: 1px solid  $white;
+    @include transition(.3s);
+    &:hover{
+        border: 1px solid $heading-color;
+    }
+    @media #{$xs,$sm} {
+        text-align: center;
+     }
+    
+}
+.callto-title h3 {
+	margin-bottom: 0px;
+	margin-top: 15px;
+	font-size: 24px;
+    color: $white;
+    @media #{$xs,$sm} {
+        text-align: center;
+        margin-bottom: 30px;
+     }
+}
+.calltoaction-btn{
+    @media #{$xs,$sm} {
+        text-align: center;
+       
+     }
+}
+
+// Call to action 3
+.call3-left{
+    @media #{$md,$xs,$sm} {
+        text-align: center;
+        margin-bottom: 30px;
+     }
+    & h2 {
+        color:$white;
+        font-size: 30px;
+        margin-bottom: 12px;
+        @media #{$xs,$sm} {
+            font-size: 24px;
+         }
+    }
+    & p{
+        color: $white;
+        margin-bottom: 0px;
+    }
+}
+
+.call-to-action3 .cbr-left {
+	justify-content: center !important;
+}
+
+.calltoaction3__wrapper__call-number {
+    & span {
+        color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 5px;
+        @media #{$xs,$sm} {
+            font-size: 14px;
+         }
+      }
+}
+  .calltoaction3__wrapper__call-number{
+      &  h5 {
+        color: $white;
+        font-size: 30px;
+        @media #{$lg} {
+            font-size: 20px;
+         }
+         @media #{$xs,$sm} {
+            font-size: 20px;
+         }
+      }
+  }
+  .calltoaction3__wrapper__icon {
+      & i {
+        font-size: 45px;
+        color: $white;
+        margin-right: 15px;
+        @media #{$lg} {
+            font-size: 40px;
+         }
+         @media #{$xs,$sm} {
+            font-size: 30px;
+         }
+      }
+  }
+  .cbr-left{
+      border-left: 1px solid $visa-border;
+      @media #{$md,$xs,$sm} {
+        border-left: none;
+     }
+  }
+
+  .call-to-action3 {
+	margin-bottom: -89px;
+	z-index: 2;
+	position: relative;
+}
+.pad-cut {
+    @media #{$xs,$sm} {
+        padding: 30px 20px;
+     }
+	
+}

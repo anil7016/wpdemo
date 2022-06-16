@@ -1,0 +1,104 @@
+
+---Downloaded files---
+The import files for: Home 1 were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = http://localhost:890/wpdemo
+Data file = /var/www/html/wpdemo/wp-content/themes/visapass/sample-data/contents-demo.xml
+Widget file = /var/www/html/wpdemo/wp-content/themes/visapass/sample-data/widget-settings.json
+Customizer file = /var/www/html/wpdemo/wp-content/themes/visapass/sample-data/customizer-data.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Imported
+Visapass Sidebar Posts Image - Recent News  - Imported
+Categories - Categories - Imported
+Tag Cloud - Tags - Imported
+
+Footer 1 : 
+
+Custom HTML - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - Quick Links - Imported
+
+Footer 3 : 
+
+Navigation Menu - Visa Information - Imported
+
+Footer 4 : 
+
+Custom HTML - Newsletter - Imported
+
+footer-2-1 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom HTML - No Title - Imported to Inactive
+
+footer-2-2 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Navigation Menu - Quick Links - Imported to Inactive
+
+footer-2-3 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Navigation Menu - Visa Information - Imported to Inactive
+
+footer-2-4 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom HTML - Get in Touch - Imported to Inactive
+
+Service Sidebar : 
+
+Visapass Services List - No Title - Imported
+Custom HTML - No Title - Imported
+Visapass Services Form - No Title - Imported
+Custom HTML - No Title - Imported
+
+Country Sidebar : 
+
+Visapass Country List - No Title - Imported
+Visapass Services Form - No Title - Imported
+Custom HTML - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

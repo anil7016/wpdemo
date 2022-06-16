@@ -1,0 +1,77 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  12. Globall Css
+/*----------------------------------------*/
+.global-text{
+    & p{
+        margin-top: 30px;
+    }
+}
+.global-subscribe{
+    margin-top: 40px;
+    & form{
+        position: relative;
+        & input{
+            height: 60px;
+            padding: 0 15px;
+            width: 46%;
+            outline: none;
+            border: 1px solid $border-color;
+            @media #{$lg} {
+                width: 55%;
+            }
+            @media #{$md,$sm,$xs} {
+                width: 100%;
+            }
+            &:-moz-placeholder,&::placeholder{
+                color: $body-text-color;
+                opacity: .5;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+        & button{
+           background-color: $theme-color;
+           position: absolute;
+           top: 0;
+           right: 108px;
+           width: 37%;
+           height: 60px;
+           padding: 0 15px;
+           color: $white;
+           border: none;
+           outline: none;
+           cursor: pointer;
+           overflow: hidden;
+           text-transform: uppercase;
+           font-weight: 500;
+           font-size: 14px;
+           @media #{$lg} {
+            width: 45%;
+            right: 0;
+            }
+            @media #{$md,$sm,$xs} {
+                width: 70%;
+                position: static;
+                }
+           & i{
+               margin-left: 10px;
+           }
+           &:hover {
+               background: $visa-hover-bg;
+           }
+           
+        }
+    }
+    
+}
+
+
+
+
+// globall 2
+
+.global-border hr {
+	margin-top: 80px;
+	border: 1px dashed $border-color;
+}

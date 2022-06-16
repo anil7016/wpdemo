@@ -1,0 +1,365 @@
+/*----------------------------------------*/
+/*  03. Hero Css
+/*----------------------------------------*/
+.aslider span {
+    color: #ffffff;
+    margin-bottom: 25px;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .aslider--title {
+    font-size: 72px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .aslider--title {
+      font-size: 48px;
+    }
+  }
+  @media (max-width: 767px) {
+    .aslider--title {
+      font-size: 36px;
+    }
+    .aslider--title br {
+      display: none;
+    }
+  }
+  
+  .aslider--subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .aslider--subtitle {
+      font-size: 20px;
+    }
+    .aslider--subtitle br {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .aslider--subtitle {
+      font-size: 16px;
+    }
+    .aslider--subtitle br {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .aslider--subtitle {
+      font-size: 16px;
+    }
+    .aslider--subtitle br {
+      display: none;
+    }
+  }
+  
+  .single-slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slider-height {
+    min-height: 750px;
+    position: relative;
+  }
+  .slider-height::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    z-index: 1;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+    .slider-height {
+      min-height: 600px;
+    }
+  }
+  
+  .slide-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: scale(1);
+    -webkit-transition: all 8s ease-out 0s;
+    -moz-transition: all 8s ease-out 0s;
+    -ms-transition: all 8s ease-out 0s;
+    -o-transition: all 8s ease-out 0s;
+    transition: all 8s ease-out 0s;
+  }
+  
+  .swiper-slide-active .slide-bg {
+    -webkit-transform: scale(1.12);
+    -moz-transform: scale(1.12);
+    transform: scale(1.12);
+  }
+  
+  .slider-active .slide-prev, .slider-active .slide-next {
+    position: absolute;
+    font-size: 20px;
+    background: #ffffff;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    font-size: 20px;
+    color: #1A1C20;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 3;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    margin: 0px;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    box-shadow: 0px 0px 30px 0px rgba(0, 5, 63, 0.1);
+  }
+  .slider-active .slide-prev:hover, .slider-active .slide-next:hover {
+    background: #E48216;
+    color: #ffffff;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1599px), xl, only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-active .slide-prev, .slider-active .slide-next {
+      top: inherit;
+      bottom: 15%;
+      left: 44.5%;
+      transform: none;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .slider-active .slide-prev, .slider-active .slide-next {
+      left: 44%;
+      top: 90%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .slider-active .slide-prev, .slider-active .slide-next {
+      left: 42.5%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slider-active .slide-prev, .slider-active .slide-next {
+      left: 40.5%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-active .slide-prev, .slider-active .slide-next {
+      left: 37.5%;
+    }
+  }
+  @media (max-width: 767px) {
+    .slider-active .slide-prev, .slider-active .slide-next {
+      display: none;
+    }
+  }
+  .slider-active .slide-prev:hover, .slider-active .slide-next:hover {
+    background: #E48216;
+    color: #ffffff;
+  }
+  
+  .slider-active .slide-next {
+    left: auto;
+    right: 40px;
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1599px), xl, only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-active .slide-next {
+      top: inherit;
+      bottom: 15%;
+      right: 44.5%;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .slider-active .slide-next {
+      right: 44%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .slider-active .slide-next {
+      right: 42.5%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slider-active .slide-next {
+      right: 40.5%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-active .slide-next {
+      right: 37.5%;
+    }
+  }
+  @media (max-width: 767px) {
+    .slider-active .slide-next {
+      display: none;
+    }
+  }
+  
+  .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0.7;
+  }
+  
+  /* 02. Hero 2 CSS */
+  .slider-height-2 {
+    min-height: 800px;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+    .slider-height-2 {
+      min-height: 600px;
+    }
+  }
+  .slider-height-2::before {
+    background: transparent;
+  }
+  
+  .aslider-2 span {
+    color: #1A1C20;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  
+  .aslider--title-2 {
+    color: #1A1C20;
+  }
+  
+  .aslider--subtitle-2 {
+    font-size: 22px;
+    color: #6f6f6f;
+  }
+  
+  .banner-content .form-inner {
+    padding: 3px;
+    width: 50%;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+    .banner-content .form-inner {
+      width: 55%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .banner-content .form-inner {
+      width: 65%;
+    }
+  }
+  @media (max-width: 767px) {
+    .banner-content .form-inner {
+      display: none;
+    }
+  }
+  
+  .banner-content .input-group .form-control::placeholder {
+    color: #6f6f6f;
+    font-size: 14px;
+  }
+  
+  .input-group-prepend span {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    margin-top: -3px;
+    font-weight: 500;
+  }
+  
+  .banner-content .input-group .input-group-prepend {
+    margin-right: 0;
+  }
+  
+  .banner-content .form-control {
+    border: 0;
+    height: 60px;
+    color: #222;
+    font-size: 14px;
+  }
+  
+  .drop-detail {
+    width: 165px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner-content .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #ffffff;
+  }
+  
+  .banner-content .sub-btn:hover, .banner-content .sub-btn:focus {
+    background: #E48216;
+    border-color: #E48216;
+  }
+  
+  .banner-content .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: auto;
+  }
+  
+  .banner__input {
+    border: 1px solid transparent;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #626975;
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+  
+  .input-group .nice-select:hover {
+    border-color: transparent;
+  }
+  
+  .banner-niceselect {
+    width: 25%;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .banner-niceselect {
+      width: 45%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .banner-niceselect {
+      width: 100%;
+    }
+  }
+  
+  .banner__input.nice-select span {
+    font-size: 15px;
+  }
+  
+  .banner-content span {
+    color: #1A1C20;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  
+  .form-control:focus {
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: none;
+  }

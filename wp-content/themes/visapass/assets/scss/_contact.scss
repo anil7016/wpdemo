@@ -1,0 +1,158 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  27. Contact  Css
+/*----------------------------------------*/
+
+.contact-form__title {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.contact-form__title span {
+  font-weight: 500;
+}
+.contact__area{
+    position: relative;
+}
+.contact__vmap{
+    @media #{$md,$xs,$sm} {
+        display: none;
+     }
+}
+.contact__vmap iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 48%;
+	height: 100%;
+   
+}
+  .contact__input {
+    width: 100%;
+    border: 1px solid transparent;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: $body-text-color;
+    background-color: $grey3;
+    border-radius: 3px;
+    margin-bottom: 30px;
+  }
+  .contact__input::placeholder {
+    color: $body-text-color;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .txt-area::placeholder {
+    color: $body-text-color;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .contact__input:focus {
+    border-color: #ffffff;
+  }
+  .contact__input.nice-select span {
+    font-size: 15px;
+  }
+  .contact__input.nice-select ul {
+    width: 100%;
+  }
+  .contact__input.nice-select ul li {
+    display: block;
+    color: $body-text-color;
+  }
+  .contact__input.nice-select::after {
+    border-color: $body-text-color;
+    right: 20px;
+    color: $body-text-color;
+  }
+  .contact__input.txt-area {
+    height: 180px;
+    padding: 20px;
+    resize: none;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+
+
+//   contact-group-area
+.contact__gpinfo:hover .contact__gpinfo-content-title{
+  color: $white;
+}
+.contact__gpinfo:hover .contact__gpinfo-content ul li span{
+  color: $white;
+}
+.contact__gpinfo:hover .contact__gpinfo-content ul li p{
+  color: $white;
+}
+.contact__gpinfo:hover .contact__gpinfo-content ul li a{
+  color: $white;
+}
+.contact__gpinfo{
+  position: relative;
+    padding: 70px 40px 20px 40px;
+    @include transition(.3s);
+    &-icon{
+        position: absolute;
+        top: -33px;
+        left: 40%;
+        @media #{$md} {
+           left: 45%;
+        }
+        & i{
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            border-radius: 50%;
+            background: $white;
+            display: inline-block;
+            font-size: 20px;
+            color: $theme-color;
+            font-size: 22px;
+        }
+    }
+    &-content{
+        &-title{
+          font-size: 18px;
+          text-transform: uppercase;
+          @include transition(.3s);
+        }
+        & p{
+            display: inline-block;
+        }
+        & ul {
+
+            & li{
+                
+                & span{
+                  font-size: 16px;
+                  color: $heading-color;
+                  width: 98px;
+                  display: inline-block;
+                  @include transition(.3s);
+                  @media #{$xs,$sm} {
+                    width: 70px;
+                    
+                 }
+                }
+                & p{
+                  padding-left: 30px;
+                  @include transition(.3s);
+                  @media #{$xs,$sm} {
+                    padding-left: 0px;
+                    display: block;
+                 }
+                }
+            }
+        }
+    }
+    &:hover{
+      background: $theme-color;
+      
+    }
+}
+.contact__gpinfo-content ul {
+  list-style: none;
+}

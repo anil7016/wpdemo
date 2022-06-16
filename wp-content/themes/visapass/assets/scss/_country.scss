@@ -1,0 +1,318 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  11. Country Css
+/*----------------------------------------*/
+.country_item__wrapper{
+    &__top{
+        position: relative;
+        &__icon{
+            position: absolute;
+            top: 38%;
+            left: 41.8%;
+            @media #{$xl} {
+                left: 40%;
+                top: 35%;
+            }
+            @media #{$lg} {
+                left: 40%;
+            }
+            @media #{$md} {
+                left: 42%;
+             }
+             @media #{$sm} {
+                left: 39%;
+                top: 34%;
+             }
+             @media #{$xs} {
+                left: 45%;
+                top: 41.7%;
+             }
+             
+            & a{
+                width: 50px;
+                height: 50px;
+                background-color: $white;
+                border-radius: 50%;
+                display: block;
+                text-align: center;
+                line-height: 50px;
+                visibility: hidden;
+                margin-top: 50px;
+                opacity: 0;  
+                color: $country-popup;
+                @include transition(.3s);
+                &:hover{
+                    background: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+    &__bottom{
+        &__title{
+            font-size: 18px;
+            margin-top: 17px;
+            text-align: center;
+            @include transition(.3s);
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+    &:hover{
+        & a{
+            visibility: visible;
+            opacity: 1; 
+            margin-top: 0px;
+        }
+    }
+}
+.country-all {
+     margin-top: -95px;
+}
+.country_item__wrapper__top__img{
+    overflow: hidden;
+    & img{
+        transform: scale(1);
+	    transition: 0.4s ease-in-out;
+    }
+
+}
+.country_item__wrapper:hover .country_item__wrapper__top__img img {
+	transform: scale(1.1);
+}
+
+.country-all .owl-nav div {
+    position: absolute;
+    top: 40%;
+    left: -20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    @media #{$sm} {
+        display: none;
+     }
+     @media #{$xs} {
+        display: none;
+     }
+    }
+    .country-all .owl-nav div i {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    color: $body-text-color;
+    background-color: $border-color;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid $white;
+     &:hover{
+         background: $theme-color;
+         color: $white;
+     }
+    }
+    .country-all .owl-nav div.owl-next {
+    left: auto;
+    right: -20px;
+    
+    }
+   
+// country all 2
+
+.popular-country-2{
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+        &:before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);        
+        top: 0;
+        left: 0;    
+        transform: scale(1);
+        z-index: -1;
+        } 
+        & .section-title{
+            color: $white;
+        }
+        & .subtitle{
+            color: $white;
+        }
+}
+
+// country all 2
+
+.countries-item.img-top {
+	margin-top: 65px;
+    box-shadow: 0px 10px 20px rgba(30, 55, 103, 0.09);
+}
+.countries-item.img-top .countries-item__top-img {
+	position: relative;
+	top: -60px;
+    & img{
+        @media #{$md,$sm,$xs} {
+            width: 100%;
+         }
+    }
+}
+
+.countries-item{
+    background: $white;
+    padding: 0px 15px 26px 15px;
+    @include transition(.3s);
+    &:hover {
+        & .countries-item__top-img-link {
+            a{
+                visibility: visible;
+                margin-top: 0px;
+                opacity: 1;
+            }
+        }
+    }
+    &__top{
+        
+        &-img{
+            position: relative;
+            &-link{
+                position: absolute;
+                top: 35%;
+                left: 41%;
+                @media #{$md} {
+                    top: 36.8%;
+                    left: 42%;
+                 }
+                 @media #{$xs} {
+                    top: 37%;
+                    left: 42%;
+                 }
+                 @media #{$sm} {
+                    top: 42%;
+                    left: 45%;
+                 }
+
+               & a {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                background: #fff;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 50%;
+                color: $theme-color;
+                visibility: hidden;
+                margin-top: 50px;
+                opacity: 0;
+                @include transition(.3s);
+                &:hover{
+                  background: $theme-color;
+                  color: $white;
+                }
+              }
+    
+            }
+        } 
+    }
+    &__bottom{
+        margin-top: -35px;
+        &-content{
+            &-title{
+                font-size: 18px;
+                    text-transform: uppercase;
+                    color: $heading-color;
+                    line-height: 28px;
+                    margin-bottom: -2px;
+                    @include transition(.3s);
+                    &:hover{
+                        color: $theme-color;
+                    }
+                    @media #{$xl} {
+                        font-size: 16px;
+                     }
+            }
+            
+            & p{
+               font-size: 14px;
+               text-transform: uppercase;
+               margin-bottom: 0px;
+            }
+        }
+    }
+    
+}
+
+
+.famous-countries .owl-nav div {
+    position: absolute;
+    top: 55%;
+    left: -20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    @media #{$sm} {
+        display: none;
+     }
+     @media #{$xs} {
+        display: none;
+     }
+    }
+    .famous-countries .owl-nav div i {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    color: $body-text-color;
+    background-color: $border-color;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid $white;
+     &:hover{
+         background: $theme-color;
+         color: $white;
+     }
+    }
+    .famous-countries .owl-nav div.owl-next {
+    left: auto;
+    right: -20px;
+    
+    }
+
+
+// Most popular conuntries
+.mostpppr-niceselect{
+    text-align: right;
+    width: 37% !important;
+    border: 1px solid #D4D7DE !important;
+    @media #{$lg} {
+        width: 40% !important;
+     }
+     @media #{$md,$sm,$xs} {
+        width: 60% !important;
+     }
+}
+
+
+.ct-btmlg {
+    @media #{$lg} {
+        margin-top: 0px;
+     }
+	
+}
+
+.dflx-content-start {
+    @media #{$sm,$xs} {
+        display: block !important;
+        justify-content: start;
+     } 
+}
+
+

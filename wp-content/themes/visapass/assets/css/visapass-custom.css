@@ -1,0 +1,208 @@
+.testimonail__wrapper.testimonail__wrapper2  img {
+    width: auto;
+    margin: 0 auto;
+}
+.testimonial-2:before {
+    display: none;
+}
+.testimonial-2 .owl-carousel .owl-dots {
+    bottom: 0;
+}
+.blog-2 .blog__thumb2.mr-30 img {
+    width: 332px;
+    height: 240px;
+    object-fit: cover;
+}
+.visa-area {
+    position: relative;
+    z-index: 9;
+}
+.steps-box__icon i {
+    height: 96px;
+    width: 96px;
+    line-height: 96px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #E48216;
+    background-color: #ffffff;
+    color: #E48216;
+    font-size: 40px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.steps-box:hover i {
+    background: #E48216;
+    color: #ffffff;
+}
+.call-to-action3s.d-flex.align-items-center {
+    position: relative;
+    z-index: 9;
+}
+.team__details-img.w-img img {
+    width: 100%;
+    border-bottom-left-radius: 30px;
+}
+.far {
+    font-family: 'Font awesome 5 pro';
+}
+.blog-meta {
+   padding-left: 15px;
+    padding-right: 15px; 
+}
+.blog-meta.visapass-meta-bottom {
+    border-bottom: 0;
+    border-top: 1px solid #E7EAEF;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.blog-meta span:first-child {
+    margin-left: 0;
+}
+.ab-tabs .nav-pills .nav-radius {
+    border-radius: 0;
+}
+.price-tab.abtab-top ul > li:first-child button {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.price-tab.abtab-top ul > li:last-child button {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+div.abtb-pth {
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.blog2-meta {
+    border-bottom: none;
+    padding: 0px;
+}
+
+/* extra */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-trust .about2__icon {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .about-trust .about2__item.d-flex {
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .callto-action-2 .callto-title {
+        margin-bottom: 24px;
+    }
+    .visa__items-single-icon i {
+        margin-right: 0;
+    }
+    .visa__items-single {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .visa__items-single-title.bdevs-el-title {
+        text-align: center;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .visa__items-single-title {
+        font-size: 14px;
+    }
+    .visa__items-single-icon i {
+        font-size: 38px;
+        margin-right: 10px;
+        line-height: 50px;
+    }
+    .visa__items-single-icon i {
+        font-size: 38px;
+        margin-right: 10px;
+        line-height: 47px;
+    }
+}
+.side-toggle i.far {
+  font-family: "Font Awesome 5 Pro";
+}
+
+
+/*fadein custom*/
+@-webkit-keyframes fadeInUp2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp2 {
+  -webkit-animation-name: fadeInUp2;
+  animation-name: fadeInUp2;
+}
+
+
+/*fadeInUp*/
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.main-menu ul li .sub-menu li:active {
+    background-color: #fff;
+}
+.main-menu ul li .sub-menu li:active a {
+    color: #E48216;
+}

@@ -1,0 +1,126 @@
+/*----------------------------------------*/
+/*  24. United States Css
+/*----------------------------------------*/
+
+.cat-link ul li .vrbg{
+    position: relative;
+    color: $white;
+    background-image: url(../img/united-states/sidebar-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-left: 0;
+    &:hover{
+        border-left: 0;
+    }
+    &::after{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0,0,0,0.5);
+       z-index: 1;
+    }
+}
+
+
+.united-states__title{
+    font-size: 48px;
+}
+
+.united-info {
+    & ul {
+        & li {
+            margin-bottom: 10px;
+            list-style:none;
+            & span{
+                width: 48.8%;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 500;
+                color: $heading-color;
+                @media #{$xs} {
+                    width: 40%;
+                }
+               &:last-child{
+                   padding-left: 55px;
+                   font-weight: 400;
+                   @media #{$xs} {
+                    padding-left: 20px;
+                }
+               }
+            }
+            
+        }
+    }
+}
+
+.united-states__title2{
+    font-size: 36px;
+}
+.united-states__title3{
+    font-size: 24px;
+}
+.ranking-table .table-bordered > :not(caption) > * {
+	border-width: 1px 0;
+	height: 50px;
+	vertical-align: middle;
+}
+
+.beautiful-link{
+    & ul {
+        & li{
+            & a{
+                font-size: 16px;
+                margin-bottom: 5px;
+                display: block;
+                font-weight: 400;
+                @include transition(.3s);
+                &:hover{
+                    font-weight: 500;
+                    text-decoration: underline;
+                    color: $theme-color;
+                }
+                
+            }
+            & .active{
+                color: $theme-color;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.table-control th:first-child{
+    width: 6%;
+    text-align: center;
+}
+.table-control th:last-child{
+    width: 12%;
+    text-align: center;
+}
+.table-control th:nth-child(2){
+    padding-left: 30px;
+}
+.table-control td:first-child{
+    text-align: center;
+}
+.table-control td:nth-child(2){
+    padding-left: 30px;
+}
+.table-control td{
+    color: $body-text-color;
+    font-weight: 400;
+    font-size: 16px;
+}
+.table-control th{
+   font-size: 16px;
+}
+.table-control td:last-child{
+    text-align: center;
+}
+.beautiful-link ul {
+    list-style: none;
+}

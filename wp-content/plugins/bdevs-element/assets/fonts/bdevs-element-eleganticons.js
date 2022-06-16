@@ -1,0 +1,19 @@
+{
+    "icons" : [
+        "icon_tools",
+        "icon_heart_alt",
+        "icon_bag_alt",
+        "icon_lightbulb_alt",
+        "icon_house_alt",
+        "icon_document_alt",
+        "icon_lock_alt",
+        "icon_image",
+        "icon_pencil-edit",
+        "icon_ribbon_alt",
+        "icon_floppy",
+        "icon_book_alt",
+        "icon_lightbulb_alt",
+        "icon_laptop",
+        "icon_toolbox_alt"
+    ]
+}

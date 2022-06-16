@@ -1,0 +1,181 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?cbb668b3af45531b52082d6612443c8c") format("truetype"),
+url("./flaticon.woff?cbb668b3af45531b52082d6612443c8c") format("woff"),
+url("./flaticon.woff2?cbb668b3af45531b52082d6612443c8c") format("woff2"),
+url("./flaticon.eot?cbb668b3af45531b52082d6612443c8c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?cbb668b3af45531b52082d6612443c8c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "search": "\f101",
+    "phone-call": "\f102",
+    "passport": "\f103",
+    "content": "\f104",
+    "customer": "\f105",
+    "passport-1": "\f106",
+    "user": "\f107",
+    "calendar": "\f108",
+    "quote": "\f109",
+    "explore": "\f10a",
+    "ab-testing": "\f10b",
+    "target": "\f10c",
+    "cursor": "\f10d",
+    "tap": "\f10e",
+    "admission": "\f10f",
+    "briefcase": "\f110",
+    "hands": "\f111",
+    "internship": "\f112",
+    "education": "\f113",
+    "coach": "\f114",
+    "trophy": "\f115",
+    "fair-trade": "\f116",
+    "upper-right-arrow-black-symbol": "\f117",
+    "play-button": "\f118",
+    "download": "\f119",
+    "paperwork": "\f11a",
+    "requirement": "\f11b",
+    "application": "\f11c",
+    "pin": "\f11d",
+    "list-interface-symbol": "\f11e",
+    "clock": "\f11f",
+    "time": "\f120",
+    "webinar": "\f121",
+    "duration": "\f122",
+    "certificate": "\f123",
+    "cash": "\f124",
+    "check": "\f125",
+    "play-button-1": "\f126",
+    "translate": "\f127",
+);
+
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-passport:before {
+    content: map-get($flaticon-map, "passport");
+}
+.flaticon-content:before {
+    content: map-get($flaticon-map, "content");
+}
+.flaticon-customer:before {
+    content: map-get($flaticon-map, "customer");
+}
+.flaticon-passport-1:before {
+    content: map-get($flaticon-map, "passport-1");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}
+.flaticon-explore:before {
+    content: map-get($flaticon-map, "explore");
+}
+.flaticon-ab-testing:before {
+    content: map-get($flaticon-map, "ab-testing");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-cursor:before {
+    content: map-get($flaticon-map, "cursor");
+}
+.flaticon-tap:before {
+    content: map-get($flaticon-map, "tap");
+}
+.flaticon-admission:before {
+    content: map-get($flaticon-map, "admission");
+}
+.flaticon-briefcase:before {
+    content: map-get($flaticon-map, "briefcase");
+}
+.flaticon-hands:before {
+    content: map-get($flaticon-map, "hands");
+}
+.flaticon-internship:before {
+    content: map-get($flaticon-map, "internship");
+}
+.flaticon-education:before {
+    content: map-get($flaticon-map, "education");
+}
+.flaticon-coach:before {
+    content: map-get($flaticon-map, "coach");
+}
+.flaticon-trophy:before {
+    content: map-get($flaticon-map, "trophy");
+}
+.flaticon-fair-trade:before {
+    content: map-get($flaticon-map, "fair-trade");
+}
+.flaticon-upper-right-arrow-black-symbol:before {
+    content: map-get($flaticon-map, "upper-right-arrow-black-symbol");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-download:before {
+    content: map-get($flaticon-map, "download");
+}
+.flaticon-paperwork:before {
+    content: map-get($flaticon-map, "paperwork");
+}
+.flaticon-requirement:before {
+    content: map-get($flaticon-map, "requirement");
+}
+.flaticon-application:before {
+    content: map-get($flaticon-map, "application");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-list-interface-symbol:before {
+    content: map-get($flaticon-map, "list-interface-symbol");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-time:before {
+    content: map-get($flaticon-map, "time");
+}
+.flaticon-webinar:before {
+    content: map-get($flaticon-map, "webinar");
+}
+.flaticon-duration:before {
+    content: map-get($flaticon-map, "duration");
+}
+.flaticon-certificate:before {
+    content: map-get($flaticon-map, "certificate");
+}
+.flaticon-cash:before {
+    content: map-get($flaticon-map, "cash");
+}
+.flaticon-check:before {
+    content: map-get($flaticon-map, "check");
+}
+.flaticon-play-button-1:before {
+    content: map-get($flaticon-map, "play-button-1");
+}
+.flaticon-translate:before {
+    content: map-get($flaticon-map, "translate");
+}

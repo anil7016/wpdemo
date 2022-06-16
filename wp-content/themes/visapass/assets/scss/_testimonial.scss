@@ -1,0 +1,273 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  16. Testimonial Css
+/*----------------------------------------*/
+.testimonail__wrapper {
+  background: #ffffff;
+  padding: 30px 30px;
+  border: 1px solid #E7EAEF;
+}
+.testimonail__wrapper__info {
+  position: relative;
+}
+.testimonail__wrapper__info__img {
+  margin-right: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonail__wrapper__info__img {
+    margin-right: 15px;
+  }
+}
+.testimonail__wrapper__info__author h4 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .testimonail__wrapper__info__author h4 {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonail__wrapper__info__author h4 {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonail__wrapper__info__author h4 {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+.testimonail__wrapper__info__author span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+  display: block;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonail__wrapper__info__author span {
+    font-size: 15px;
+  }
+}
+.testimonail__wrapper__info__quotes {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transform: rotate(180deg);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .testimonail__wrapper__info__quotes {
+    top: 12px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonail__wrapper__info__quotes {
+    top: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonail__wrapper__info__quotes {
+    top: 10px;
+  }
+}
+.testimonail__wrapper__info__quotes i {
+  font-size: 40px;
+  color: #E48216;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .testimonail__wrapper__info__quotes i {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonail__wrapper__info__quotes i {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .testimonail__wrapper__info__quotes i {
+    font-size: 20px;
+  }
+}
+.testimonail__wrapper__content p {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonail__wrapper__content p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonail__wrapper__content p {
+    font-size: 14px;
+  }
+}
+.testimonail__wrapper__content__reviews ul li {
+  display: inline-block;
+  font-weight: 400;
+}
+.testimonail__wrapper__content__reviews ul li i {
+  color: #E48216;
+}
+
+.testimonail-area .owl-carousel .owl-dots span {
+  background: #C1C5CC;
+  width: 15px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.testimonail-area .owl-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.testimonail-area .owl-carousel .owl-dots .active span {
+  background-color: #E48216;
+}
+
+.testimonial-2 {
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.testimonial-2:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  z-index: -1;
+}
+.testimonial-2 .section-title {
+  color: #ffffff;
+}
+.testimonial-2 .subtitle {
+  color: #ffffff;
+}
+
+.testimonail__wrapper2 {
+  background-color: transparent;
+  z-index: 99;
+  border: 0;
+}
+
+.testimonail__header__content h4 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.testimonail__header__content p {
+  color: #ffffff;
+}
+
+.testimonail__body p {
+  color: #c9c9c9;
+  padding: 0px 195px;
+  font-style: italic;
+  font-weight: 400;
+  font: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .testimonail__body p {
+    padding: 0px;
+  }
+}
+
+.testimonail__footer ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.testimonail__footer ul li i {
+  color: #E48216;
+}
+.testimonail__footer ul li:last-child {
+  color: #ffffff;
+  margin-right: 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.testimonial-2 .owl-carousel .owl-item img {
+  margin: auto;
+  width: inherit;
+}
+
+.testimonial-2 .owl-carousel .owl-dots span {
+  background: #C1C5CC;
+  width: 15px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.testimonial-2 .owl-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -27px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.testimonial-2 .owl-carousel .owl-dots .active span {
+  background-color: #E48216;
+}
+
+.testimonial-2 .owl-nav div {
+  position: absolute;
+  top: 60%;
+  left: -20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .testimonial-2 .owl-nav div {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-2 .owl-nav div {
+    display: none;
+  }
+}
+
+.testimonial-2 .owl-nav div i {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #8E96A4;
+  background-color: #41444A;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.testimonial-2 .owl-nav div.owl-next {
+  left: auto;
+  right: -20px;
+}
+
+.testimonial-2 .owl-nav div:hover i {
+  background-color: #E48216;
+  color: #fff;
+}

@@ -1,0 +1,106 @@
+/*----------------------------------------*/
+/*  04. Visa Details Css
+/*----------------------------------------*/
+/*--
+    - Visa-area
+------------------------------------------*/
+.visa__items {
+    border-left: 1px solid #E89D4A;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .visa__items {
+      border-left: 1px solid transparent;
+    }
+  }
+  @media (max-width: 767px) {
+    .visa__items {
+      border-left: 1px solid transparent;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visa__items {
+      border-left: 1px solid transparent;
+    }
+  }
+  .visa__items-single {
+    padding: 40px 52px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .visa__items-single {
+      padding: 25px 40px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .visa__items-single {
+      padding: 20px 22px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .visa__items-single {
+      padding: 35px 64px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .visa__items-single {
+      padding: 35px 30px;
+    }
+  }
+  .visa__items-single-icon i {
+    font-size: 50px;
+    color: #ffffff;
+    margin-right: 20px;
+    line-height: 50px;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .visa__items-single-icon i {
+      margin-right: 15px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .visa__items-single-icon i {
+      font-size: 30px;
+      list-style: 30px;
+      margin-right: 10px;
+    }
+  }
+  .visa__items-single-title {
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .visa__items-single-title {
+      font-size: 21px;
+    }
+  }
+  @media (max-width: 767px) {
+    .visa__items-single-title {
+      font-size: 16px;
+    }
+  }
+  .visa__items-single:hover {
+    background: #D16C07;
+  }
+  
+  .br-none {
+    border-left: 1px solid transparent;
+  }
+  
+  .visa__items:hover {
+    border-left: 1px solid #E48216;
+  }
+  
+  .visa-top {
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+  }

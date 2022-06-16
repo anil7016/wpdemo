@@ -1,0 +1,78 @@
+/*----------------------------------------*/
+/*  15. Partners Css
+/*----------------------------------------*/
+.partners-area{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    & .partners-65{
+        @media #{$md} {
+            margin-right: 65;
+            margin-bottom: 30px;
+         }
+    }
+    
+    & .partner-btn{
+        background: transparent;
+        border: 1px solid $theme-color;
+        color: $theme-color;
+        &:hover{
+            background: $theme-color;
+            border: 1px solid $theme-color;
+            color: $white;
+        }
+    }
+
+}
+
+.partner-img {
+    text-align: center;
+    padding: 50px 20px;
+    background: $white;
+    border: 1px solid $border-color;
+    @media #{$lg} {
+        padding: 40px 10px;
+     }
+    @media #{$md} {
+        padding: 50px 10px;
+     }
+
+}
+
+
+// Partners inner Page 
+
+/* ==========================================================================
+   Projects CSS
+   ========================================================================== */
+
+  .project-filter li {
+	display: inline-block;
+	cursor: pointer;
+	color: $body-text-color;
+	font-size: 16px;
+	font-weight: 400;
+	height: 40px;
+  line-height: 40px;
+  padding: 0px 19px;
+	background: $faq-bg;
+	border: 1px solid $filter-border;
+    margin-right: 5px;
+}
+  .project-filter {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .project-filter li:last-child {
+    margin: 0;
+  }
+  .project-filter li.active{
+    color: $white;
+    background: $theme-color;
+    border: 1px solid $theme-color;
+  }
+  
+  .project-filter li:focus {
+    color: $white;
+    background: $theme-color;
+  }

@@ -1,0 +1,327 @@
+/*----------------------------------------*/
+/*  23. Business Visa Css
+/*----------------------------------------*/
+
+.cat-link ul li .active{
+    background: $theme-color;
+    color: $white;
+    border-left: 4px solid $theme-color;
+    
+}
+.cat-link ul li a {
+    position: relative;
+     width: 100%;
+     background: $menuh-bg;
+     height: 70px;
+     line-height: 70px;
+     padding-left: 35px;
+     border-bottom: 1px solid $white;
+     border-left: 4px solid $menuh-bg;
+     font-size: 18px;
+     color: $heading-color;
+    @include transition(.3s);
+    display: inline-block;
+    &:hover{
+       border-left: 4px solid $theme-color;
+    }
+    &:active{
+       background: $theme-color;
+       color: $white;
+    }
+    &:before{
+       position: absolute;
+       content: '\f178';
+       right: 20px;
+       top: 20px;
+       font-family: "Font Awesome 5 pro";
+       width: 30px;
+       height: 30px;
+       background: #fff;
+       display: inline-block;
+       text-align: center;
+       line-height: 30px;
+       color: $theme-color;
+    }
+    
+ }
+ 
+ // Pdf widgets 
+ .title-white{
+    & h4{
+       color: $white;
+    }
+ }
+ .docu__text{
+    
+    & h6{
+       color: #fff;
+       margin-bottom: 0px;
+       font-size: 16px;
+    }
+    & p{
+       color: #fff;
+       text-transform: uppercase;
+       font-size: 14px;
+       & span{
+          margin-left: 15px;
+          position: relative;
+          font-size: 14px;
+          &::before {
+             content: '';
+             position: absolute;
+             height: 10px;
+             width: 1px;
+             background: $busines-br;
+             top: 3px;
+             left: -7px;
+           }
+       }
+    }
+    
+ }
+ .docu__thumb{
+    & a{
+       & i{
+          font-size: 50px;
+          line-height: 24px;
+          color: $white;
+       }
+    }
+ }
+ .pdf-btm-border {
+     border-bottom: 1px solid $busines-br;
+     padding: 10px 0px;
+ }
+ .pdf-btm-none{
+    border-bottom: none;
+     padding:10px 0px 0px 0px;
+    margin-bottom: 0px;
+ }
+ 
+ 
+ //banner area
+ .sidebar-left__wrapper {
+	margin-right: 60px;
+    @media #{$md,$xs,$sm} {
+        margin-right: 0px;
+     }
+}
+.sidebar__deatils {
+	margin-left: -50px;
+    @media #{$md,$xs,$sm} {
+        margin-left: 0px;
+     }
+}
+ .sidebar__widget-content{
+    &-banner{
+       position: relative;
+       &::before{
+        position: absolute;
+        background: linear-gradient(rgba(255, 255, 255, 0) 30%, #1a1c20 100%);
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        
+       }
+       & img{
+           width: 100%;
+       }
+       &-text{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+          & span{
+             font-size: 18px;
+             font-weight: 400;
+             text-transform: uppercase;
+             color: $white;
+          }
+          & h2{
+             color: $white;
+             font-size: 36px;
+             text-transform: uppercase;
+             font-weight: 700;
+             margin-bottom: 20px;
+          }
+          & a{
+             height: 40px;
+             padding: 0px 30px;
+             border-radius: 50px;
+             background: $ads-btn;
+             line-height: 40px;
+             display: inline-block;
+             font-style: 14px;
+             text-transform: uppercase;
+             color: $heading-color;
+          }
+       }
+ }
+ }
+ 
+ //Visa right area
+
+
+ .visa-deatils__title{
+     font-style: 24px;
+ }
+ .business__items-single {
+	padding: 45px 25px 30px 25px;
+	text-align: center;
+    @media #{$lg,$md,$xs,$sm} {
+        margin-bottom: 30px;
+     }
+    & i{
+        font-size: 60px;
+        color: $theme-color;
+    }
+    &-title{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    & p{
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+
+.necessary__title{
+    font-size: 24px;
+}
+.necessary__box-thumb {
+	height: 100%;
+    & img{
+        height: 100%;
+    }
+   
+}
+.necessary__box{
+    @media #{$lg,$md,$xs,$sm} {
+        margin-top: 30px;
+     }
+    & ul{
+        & li{
+            margin-bottom: 11px;
+            font-weight: 400;
+            color: $heading-color;
+            & i{
+                margin-right: 15px;
+                color: $theme-color;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.business-btn{
+    background: transparent;
+    color: $theme-color;
+    border: 1px solid $theme-color;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 25px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    @include transition(.3s);
+    &:hover{
+        background-color: $theme-color;
+        color: $white;
+    }
+}
+
+.information-info {
+	border: 1px solid $border-color;
+	padding: 30px;
+    @media #{$xl,$lg,$md,$xs,$sm} {
+        margin-bottom: 30px;
+     }
+    & ul {
+        & li {
+            margin-bottom: 10px;
+            &:last-child{
+                border-top: 1px solid $border-color;
+                padding-top: 20px;
+                margin-top: 20px;
+                margin-bottom: -10px;
+                & span{
+                    font-weight: 500;
+                    color: $theme-color;
+                    &:last-child{
+                        font-weight: 500;
+                        color: $theme-color;
+                    }
+                }
+            }
+            & span{
+                width: 48.8%;
+                display: inline-block;
+                font-size: 16px;
+                font-weight: 400;
+                color: $heading-color;
+                @media #{$xs,$sm} {
+                    width: 47.8%
+                 }
+                &:last-child{
+                    text-align: right;
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+.information-right{
+    position: relative;
+    height: 100%;
+    & img{
+        height: 100%;
+    }
+    @media #{$lg,$md,$xs,$sm} {
+        margin-top: 30px;
+     }
+}
+
+
+.information__wrapper{
+    position: absolute;
+	bottom: 0px;
+	left: 20%;
+    padding: 25px;
+    height: 90px;
+    width: 250px;
+    @media #{$xl} {
+       left: 11%;
+     }
+     @media #{$lg,$md} {
+        left: 16%;
+      }
+    
+      @media #{$xs} {
+        left: 7%;
+      }
+    &-icon{
+        & i{
+            font-size: 40px;
+            margin-right: 20px;
+            color: $white;
+        }
+    }
+    &-cell{
+        & span{
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+        }
+        & h5{
+            font-size: 20px;
+            color: $white;
+        }
+    }
+}
+.information-info ul {
+    list-style: none;
+}

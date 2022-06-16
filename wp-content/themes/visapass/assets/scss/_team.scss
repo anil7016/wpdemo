@@ -1,0 +1,448 @@
+/*----------------------------------------*/
+/*  14. Team Css
+/*----------------------------------------*/
+
+/* team */
+.team{
+    position: relative;
+    // team thumb
+    &__thumb{
+        position: relative;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            transform: scale(1);
+	        transition: 0.4s ease-in-out;
+        }
+        &::before{
+            position: absolute;
+            background: linear-gradient(rgba(26, 28, 32, 0.02) 60%, #051a4a 100%);
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            @include transition(.3s);
+            opacity: 0;
+            visibility: hidden;
+        }
+        &-info{
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding: 30px 50px;
+          padding-bottom: 10px;
+          z-index: 2;
+          opacity: 0;
+          visibility: hidden;
+          @include transition(.3s);
+          @media #{$lg} {
+            padding: 20px 30px;
+        }
+        @media #{$sm,$xs} {
+            padding: 0px;
+        }
+          & p{
+              color: $white;
+              margin-bottom: 20px;
+          }
+        }
+    }
+    &:hover{
+        & ::before{
+            opacity: 1;
+            visibility: visible;
+        }
+        & .team__thumb-info{
+            opacity: 1;
+            visibility: visible;
+            padding-bottom: 30px;
+        }
+    }
+    &-social{
+        & a{
+            color: $social-icon;
+            font-size: 15px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            background: $white;
+            display: inline-block;
+            border-radius: 100%;
+            margin: 0 2px;
+            @media #{$xl} {
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                margin: 0 2px;
+            }
+            @media #{$lg} {
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                margin: 0px;
+            }
+            &:hover{
+                background: $theme-color;
+                color: $white;
+            }
+          }
+      }
+    // team text
+    &__text{
+        &-title{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 0px;
+            @include transition(.3s);
+            &:hover{
+                color: $theme-color;
+            }
+        }
+        & span{
+            color: $body-text-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    }
+
+}
+.team:hover .team__thumb img {
+	transform: scale(1.1);
+}
+
+
+// Team Inner page
+
+.tagent__area{
+    position: relative;
+ }
+ .tagent__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 49.5%;
+	height: 124%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    @media #{$md,$xs,$sm} {
+        display: none;
+    }
+}
+
+.inner-team {
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	padding: 30px 15px 0px 0px;
+	margin-top: 72px;
+}
+
+
+
+
+// team details
+
+/*----------------------------------------*/
+/*  07. TEAM CSS START
+/*----------------------------------------*/
+.team__area {
+    position: relative;
+  }
+  .team__area::after {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    background: url("../img/bg/wave-bg.png");
+    height: 140%;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .team__area::after {
+      height: 132%;
+    }
+  }
+  .team__item {
+    padding: 30px 35px;
+    background: #423d7c;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+  .team__item-add {
+    background: #ffffff;
+  }
+  .team__item-add::after {
+    display: none;
+  }
+  .team__item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+    background-image: -webkit-linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+    background-image: -ms-linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+    background-image: linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+    opacity: 0;
+  }
+  .team__item:hover::after {
+    opacity: 1;
+  }
+  .team__item:hover .team__info {
+    top: 35px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .team__item:hover .team__social {
+    bottom: 35px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .team__add {
+    padding: 113px 0;
+  }
+  .team__add a {
+    font-size: 50px;
+    color: #9895b4;
+  }
+  .team__add a:hover {
+    color: #4636ff;
+  }
+  .team__thumb img {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .team__content h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  .team__content span {
+    font-size: 15px;
+    color: #cac9d3;
+  }
+  .team__info {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .team__info h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-transform: capitalize;
+  }
+  .team__info span {
+    font-size: 15px;
+    color: #cac9d3;
+  }
+  .team__social {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  .team__social ul li {
+    display: inline-block;
+    margin-right: 7px;
+  }
+  .team__social ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #7b23de;
+    font-size: 14px;
+    color: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .team__social ul li a:hover {
+    background: #ffffff;
+    color: #7b23de;
+  }
+  .team__details-inner {
+    -webkit-box-shadow: 0px 50px 80px 0px rgba(3, 0, 53, 0.1);
+    -moz-box-shadow: 0px 50px 80px 0px rgba(3, 0, 53, 0.1);
+    box-shadow: 0px 50px 80px 0px rgba(3, 0, 53, 0.1);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+  .team__details-shape {
+    right: -11%;
+    bottom: -16%;
+    z-index: -1;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .team__details-shape {
+      right: 0;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .team__details-shape {
+      right: 0;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .team__details-shape {
+      right: -3%;
+      bottom: -7%;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .team__details-shape {
+      right: -3%;
+      bottom: -7%;
+    }
+  }
+  @media (max-width: 575px) {
+    .team__details-shape {
+      right: -3%;
+      bottom: -5%;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .team__details-img {
+      margin-right: 30px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .team__details-img {
+      margin-right: 0px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .team__details-img {
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 575px) {
+    .team__details-img {
+      margin-right: 0px;
+    }
+  }
+  .team__details-img img {
+    -webkit-border-radius: 30px 0 0 30px;
+    -moz-border-radius: 30px 0 0 30px;
+    border-radius: 30px 0 0 30px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .team__details-content {
+      padding-top: 40px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .team__details-content {
+      padding: 40px;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .team__details-content {
+      padding: 40px;
+    }
+  }
+  @media (max-width: 575px) {
+    .team__details-content {
+      padding: 40px;
+    }
+  }
+  .team__details-content > span {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+  .team__details-content h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .team__details-content p {
+    margin-bottom: 35px;
+    padding-right: 80px;
+  }
+  .team__details-contact ul li {
+    margin-bottom: 8px;
+    display: flex;
+  }
+  .team__details-contact ul li .icon i {
+    line-height: 27px;
+    color: #E48216;
+    margin-right: 15px;
+  }
+  .team__details-contact ul li .text span {
+    font-weight: 500;
+  }
+  .team__details-social ul li {
+    display: inline-block;
+    margin-right: 7px;
+  }
+  .team__details-social ul li a {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f1f1f1;
+    font-size: 14px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .team__details-social ul li a:hover {
+    background: #E48216;
+    color: #ffffff;
+  }
+  .team__details-info h4 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .team__details-info p {
+    margin-bottom: 25px;
+  }
+  
+  .team__details-contact ul li i {
+    color: rgb(111, 111, 111) !important;
+  }
+  .team__thumb-2 img {
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+  }
